@@ -70,9 +70,11 @@
         dia = dia + D;
         if (dia > 30)
         {
-            
-            dia = dia - 30;
             mes = mes + (dia/30);
+            do
+            {
+                dia = dia - 30;
+            } while (dia > 30);
             if (mes > 12)
             {
                 mes = mes-12;
@@ -87,7 +89,13 @@
         if (dia < 1)
         {
             mes = mes + (dia/30)-1;
-            dia = dia + 30;
+            
+            do
+            {
+                dia = dia + 30;
+            } while (dia <1);
+            
+            
             if (mes < 1)
             {
                 anio = anio +(mes/12)-1;
