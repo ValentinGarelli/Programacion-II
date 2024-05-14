@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     cuenta1.extraer(500);
     cout << "Saldo 1: " << cuenta1.get_saldo() << endl;
 
-    cuenta2.set_numeroCuenta(848);
+    cuenta2.set_numeroCuenta(7561568);
     cuenta2.set_interes(-50);
     cuenta2.depositar(570.43);
     cout << "ingrese el monton a transferir de la cuenta 1 a la cuenta 2: ";
