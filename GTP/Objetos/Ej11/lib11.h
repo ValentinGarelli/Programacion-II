@@ -3,10 +3,13 @@ class Conjunto
 private:
     int *elementos;
     int numElementos;
+    void eliminarRepetidos();
+    int Interseccion(Conjunto C2);
 public:
-    Conjunto();
     Conjunto(int n);
     Conjunto(int n,int *elem);
+    int getLargo();
+    int getElemento(int i);
     void agregar(int elem);
     void eliminar(int elem);
     void mostrar();
